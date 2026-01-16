@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jee Art | Portrait Artist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fancy Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fafafa;
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: white;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            
+        }
+
+        .gallery div {
+            background: #ddd;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 14px;
+            height: 320px; 
+            width: 100%;
+            overflow: hidden;
+        }
+        .gallery div {
+            position: relative;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .gallery:hover div {
+            filter: brightness(0.5);
+        }
+        .gallery div:hover {
+            transform: scale(1.05);
+            filter: brightness(1);
+        }
+
+        .gallery img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            background: #f0f0f0;
+            display: block;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #222;
+            border: 1px solid #222;
+            padding: 12px 30px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .contact a img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .contact a:hover {
+            background: #222;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jee Art</h1>
+    <p>Fine Art Portraits</p>
+</header>
+
+<section class="about">
+    <h2>About the Artist</h2>
+    <p>
+        I am a portrait artist specializing in acrylic painting, graphite, charcoal, and colored pencil portraits. My work focuses on realism, emotion, and fine detail. Each portrait is carefully crafted to capture both likeness and personality.
+    </p>
+</section>
+
+<section>
+    <h2>Gallery </h2>
+    <div class="gallery">
+        <div><img src="image/child portrait.jpg" alt="Commission charocal portrait 12*16 size"></div>
+        <div><img src="image/painting.jpg" alt=""></div>
+        <div><img src="image/woman portrait.jpg" size="" alt=""></div>
+        <div><img src="image/colored pencil.jpg" alt=""></div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Commission a Portrait</h2>
+    <p>Contact me to start your custom artwork.</p>
+    <a href="https://www.instagram.com/jee_art.007/"> <img src="image/ig logo.png " alt=""> Instagram</a>
+    <a href="mailto:jeeart070@gmail.com ?"> <img src="image/email logo.png" alt="">Email</a>
+</section>
+
+<footer>
+    © 2026 Jee Art — All rights reserved
+</footer>
+
+</body>
+</html>
